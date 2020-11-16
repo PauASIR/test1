@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica bloque 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function funcion_mensaje()
+        {
+            var nombre = document.getElementById("nombre").value;
+            var apellido1 = document.getElementById("apellido1").value;
+            alert ('Bienvenido ' + nombre + ' ' + apellido1);
+        }
+    </script>
+</head>
+<body>
+    <h1 class="etiqueta">Practica bloque 3</h1>
+    Introduce nombre: <input type="text" id="nombre">
+    Introduce apellido1 <input type="text" id="apellido1" onblur="funcion_mensaje()">
+</body>
+</html>
